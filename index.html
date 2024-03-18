@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id = "reset-button"> Reset </button>
+    <div class="gameBoard">
+        <div id="computer-Choice" class = "choiceDisplay">
+
+        </div>
+        <hr>
+        <div id="player-Choice" class = "choiceDisplay">
+
+        </div>
+        <div id="choices">
+            <div class="choice" id = "rock">
+                <img class = "choice-image" src="images/rock.png" alt="a drawing of a rock">
+            </div>
+            <div class="choice" id = "paper">
+                <img class = "choice-image" src="images/paper.png" alt="a drawing of a sheet of paper">
+            </div>
+            <div class="choice" id = "scissors">
+                <img class = "choice-image"src="images/scissors.png" alt="a drawing of scissors">
+            </div>
+        </div>
+        <h1> Make your move! </h1>
+    </div>
+    <div class="score-display">
+        <h3> Score </h3>
+        <hr>
+        <h4 id = "score"> 00 : 00</h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

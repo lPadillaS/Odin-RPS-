@@ -1,0 +1,47 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gameBoard{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.gameBoard hr{
+    background-color: black;
+    height: 2px;
+    width: 60%;
+}
+.choiceDisplay{
+    height:200px;
+    width:200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#choices{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choice{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice-image{
+    max-height: 100%;
+    max-width: 100%;
+}
