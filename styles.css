@@ -24,9 +24,12 @@ body{
     width:200px;
     border: 2px solid black;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #choices{
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     width: 50%;
     display: flex;
     align-items: center;
@@ -40,8 +43,16 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    transition:.2s;
 }
-.choice-image{
-    max-height: 100%;
+.choice:hover{
+    transform:scale(1.2);
+}
+input[type = "radio"]{
+    display: none;
+}
+img{
     max-width: 100%;
+    max-height: 100%;
 }
+

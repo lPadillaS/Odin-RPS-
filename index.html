@@ -16,18 +16,30 @@
         <div id="player-Choice" class = "choiceDisplay">
 
         </div>
-        <div id="choices">
-            <div class="choice" id = "rock">
-                <img class = "choice-image" src="images/rock.png" alt="a drawing of a rock">
-            </div>
+        <form id="choices">
+            <input class = "radio-button" type="radio" name = "user-choice" value = "rock" id = "radio-rock">
+            <label for="radio-rock">
+                <div class="choice" id = "rock" >
+                    <img class = "choice-image" src="images/rock.png" alt="a drawing of a rock">
+                </div>
+            </label>
+            <input class = "radio-button" type="radio" name = "user-choice" value = "paper" id = "radio-paper">
+            <label for="radio-paper">
             <div class="choice" id = "paper">
                 <img class = "choice-image" src="images/paper.png" alt="a drawing of a sheet of paper">
             </div>
+            </label>
+            <input type="radio" class="radio-button" name = "user-choice" value = "scissors" id = "radio-scissors">
+            <label for="radio-scissors">
             <div class="choice" id = "scissors">
                 <img class = "choice-image"src="images/scissors.png" alt="a drawing of scissors">
             </div>
-        </div>
-        <h1> Make your move! </h1>
+            </label>
+        </form>
+        <button id = "sub-button"> 
+            <h1> Make your move! </h1>
+        </button>
+        
     </div>
     <div class="score-display">
         <h3> Score </h3>
