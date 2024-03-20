@@ -1,10 +1,11 @@
 let compChoice = document.getElementById("computer-Choice");
 let userChoice = document.getElementById("player-Choice");
-
+let restartButton = document.getElementById("reset-button");
+let playButton = document.getElementById("play-button");
 let buttons = document.getElementsByName("user-choice");
 let sub = document.getElementById("sub-button");
 sub.addEventListener("click", check);
-coumputerChoice();
+
 function check()
 {
     for(let button of buttons)
