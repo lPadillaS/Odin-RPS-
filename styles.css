@@ -2,10 +2,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
+    text-align: center;
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
+}
+#game{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #action-board{
     display:flex;
@@ -13,9 +21,10 @@ body{
     align-items:center;
     justify-content: center;
     gap:10px;
+    width: 10%;
 }
 #action-board button{
-    width:100px;
+    width:100%;
     background: none;
     border: 2px solid tomato;
     transition: .1s;
@@ -51,13 +60,15 @@ body{
 }
 #choices{
     margin: 20px 0 20px 0;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+label{
+    width:30%;
+}
 .choice{
-    width: 100px;
     height: 100px;
     border: 2px solid black;
     border-radius: 5px;
@@ -65,15 +76,31 @@ body{
     align-items: center;
     justify-content: center;
     transition:.2s;
+    cursor:pointer;
 }
 .choice:hover{
-    transform:scale(1.2);
+    transform:scale(1.1);
+}
+.choice:active{
+    transform:scale(.9);
 }
 input[type = "radio"]{
     display: none;
 }
+#score-display{
+    width: 10%;
+}
 img{
     max-width: 100%;
     max-height: 100%;
+}
+#sub-button{
+    background:none;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:.1s;
+}
+#sub-button:active{
+    transform: scale(1.2);
 }
 

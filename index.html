@@ -7,47 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="action-board">
-        <button id="play-button"> Play </button>
-        <button id = "reset-button"> Reset </button>
-    </div>
-    <div class="gameBoard">
-        <div id="computer-Choice" class = "choiceDisplay">
-
+    <h1> YOU WIN! </h1>
+    <div id="game">
+        <div id="action-board">
+            <button id = "reset-button"> Reset </button>
         </div>
-        <hr>
-        <div id="player-Choice" class = "choiceDisplay">
+        <div class="gameBoard">
+            <div id="computer-Choice" class = "choiceDisplay">
 
-        </div>
-        <form id="choices">
-            <input class = "radio-button" type="radio" name = "user-choice" value = "rock" id = "radio-rock">
-            <label for="radio-rock">
-                <div class="choice" id = "rock" >
-                    <img class = "choice-image" src="images/rock.png" alt="a drawing of a rock">
+            </div>
+            <hr>
+            <div id="player-Choice" class = "choiceDisplay">
+
+            </div>
+            <form id="choices">
+                <input class = "radio-button" type="radio" name = "user-choice" value = "rock" id = "radio-rock">
+                <label for="radio-rock">
+                    <div class="choice" id = "rock" >
+                        <img class = "choice-image" src="images/rock.png" alt="a drawing of a rock">
+                    </div>
+                </label>
+                <input class = "radio-button" type="radio" name = "user-choice" value = "paper" id = "radio-paper">
+                <label for="radio-paper">
+                <div class="choice" id = "paper">
+                    <img class = "choice-image" src="images/paper.png" alt="a drawing of a sheet of paper">
                 </div>
-            </label>
-            <input class = "radio-button" type="radio" name = "user-choice" value = "paper" id = "radio-paper">
-            <label for="radio-paper">
-            <div class="choice" id = "paper">
-                <img class = "choice-image" src="images/paper.png" alt="a drawing of a sheet of paper">
-            </div>
-            </label>
-            <input type="radio" class="radio-button" name = "user-choice" value = "scissors" id = "radio-scissors">
-            <label for="radio-scissors">
-            <div class="choice" id = "scissors">
-                <img class = "choice-image"src="images/scissors.png" alt="a drawing of scissors">
-            </div>
-            </label>
-        </form>
-        <button id = "sub-button"> 
-            <h1> Make your move! </h1>
-        </button>
-        
-    </div>
-    <div class="score-display">
-        <h3> Score </h3>
-        <hr>
-        <h4 id = "score"> 00 : 00</h4>
+                </label>
+                <input type="radio" class="radio-button" name = "user-choice" value = "scissors" id = "radio-scissors">
+                <label for="radio-scissors">
+                <div class="choice" id = "scissors">
+                    <img class = "choice-image"src="images/scissors.png" alt="a drawing of scissors">
+                </div>
+                </label>
+            </form>
+            <button id = "sub-button"> 
+                <h1> Make your move! </h1>
+            </button>
+            
+        </div>
+        <div id="score-display">
+            <h3> Score </h3>
+            <hr>
+            <h4 id = "score"> 00 : 00</h4>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
