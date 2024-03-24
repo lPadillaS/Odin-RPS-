@@ -3,31 +3,46 @@ let userChoice = document.getElementById("player-Choice");
 let restartButton = document.getElementById("reset-button");
 let buttons = document.getElementsByName("user-choice");
 let sub = document.getElementById("sub-button");
+let score_display = document.getElementById("score");
+let announce = document.getElementById("announcer");
+let score = {'computer': 0, 'user': 0};
 sub.addEventListener("click", () => {
     checkWinner(checkUserchoice(), computerChoice())
 });
+restartButton.addEventListener("click", () => {
+    score['computer'] = 0;
+    score['user'] = 0;
+    score_display.innerText = `${score['user']}:${score['computer']}`
+})
 function checkWinner(userMove, computerMove){
     if (userMove == computerMove){
-        console.log("it's a tie");
+        announce.innerText = "It's a tie!"
     }
     else if(userMove == "rock" && computerMove == "paper"){
-        console.log("computer wins");
+        announce.innerText = "Computer wins!"
+        score['computer']++;
     }
     else if (userMove == "paper" && computerMove == "rock"){
-        console.log("You win");
+        announce.innerText = "You win!"
+        score['user']++;
     }
     else if(userMove == "rock" && computerMove == "scissors"){
-        console.log("You win");
+        announce.innerText = "You win!"
+        score['user']++;
     }
     else if(userMove == "scissors" && computerMove == "rock"){
-        console.log("computer wins");
+        announce.innerText = "Computer wins!"
+        score['computer']++;
     }
     else if(userMove == "paper" && computerMove == "scissors"){
-        console.log("computer wins");
+        announce.innerText = "Computer wins!"
+        score['computer']++;
     }
     else if(userMove == "scissors" && computerMove == "paper"){
-        console.log("you win");
+        announce.innerText  = "You win!"
+        score['user']++;
     }
+    score_display.innerText = `${score['user']}:${score['computer']}`
 }
 function checkUserchoice()
 {

@@ -97,7 +97,6 @@ img{
     border-radius: 10px;
     cursor:pointer;
     transition:.1s;
-    
 }
 #sub-button:active{
     transform: scale(1.2);
