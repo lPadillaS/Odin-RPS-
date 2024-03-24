@@ -47,11 +47,11 @@ body{
 .gameBoard hr{
     background-color: black;
     height: 2px;
-    width: 60%;
+    width: 40vh;
 }
 .choiceDisplay{
-    height:200px;
-    width:200px;
+    height: 25vh;
+    width:25vh;
     border: 2px solid black;
     border-radius: 10px;
     display: flex;
@@ -65,11 +65,9 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-label{
-    width:30%;
-}
 .choice{
-    height: 100px;
+    height: 15vh;
+    width: 15vh;
     border: 2px solid black;
     border-radius: 5px;
     display:flex;
@@ -99,6 +97,7 @@ img{
     border-radius: 10px;
     cursor:pointer;
     transition:.1s;
+    
 }
 #sub-button:active{
     transform: scale(1.2);
